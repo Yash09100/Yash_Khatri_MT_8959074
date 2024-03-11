@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5AA-Nc-LDa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5AA-Nc-LDa">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -245,21 +244,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5b-wS-idf">
-                                <rect key="frame" x="163" y="546" width="67" height="35"/>
+                                <rect key="frame" x="155" y="546" width="83" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Lab 2"/>
+                                <buttonConfiguration key="configuration" style="filled" title="My labs"/>
                                 <connections>
                                     <segue destination="Hd0-Sj-7PT" kind="show" id="4ns-SH-4mr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTZ-yb-Set">
-                                <rect key="frame" x="163" y="589" width="67" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Lab 3"/>
-                                <connections>
-                                    <segue destination="5t1-8Y-d2c" kind="show" id="HJt-Rn-Uqy"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-zL-lgN">
@@ -275,15 +265,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBA-DH-FZA">
-                                <rect key="frame" x="163" y="632" width="68" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Lab 4"/>
-                                <connections>
-                                    <segue destination="Ipb-Ne-DKp" kind="show" id="nLQ-FZ-4PK"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YASH KHATRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gD-pX-BzF">
                                 <rect key="frame" x="141" y="317" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -504,7 +485,13 @@
                             <constraint firstItem="Sbp-os-NTf" firstAttribute="trailing" secondItem="YFq-g6-7Aj" secondAttribute="trailing" constant="79" id="wZC-iG-5MM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XPV-fW-Rod"/>
+                    <navigationItem key="navigationItem" id="XPV-fW-Rod">
+                        <barButtonItem key="rightBarButtonItem" title="Lab 3" id="w4Z-DS-pIc">
+                            <connections>
+                                <segue destination="5t1-8Y-d2c" kind="show" id="IW2-Yj-4hH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="first" destination="hJs-Qg-0uS" id="NA3-Bg-n2F"/>
                     </connections>
@@ -601,7 +588,13 @@
                         <viewLayoutGuide key="safeArea" id="52u-w0-X02"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="26d-iM-fXp"/>
+                    <navigationItem key="navigationItem" id="26d-iM-fXp">
+                        <barButtonItem key="rightBarButtonItem" title="Lab 4" id="Mbq-fE-FCR">
+                            <connections>
+                                <segue destination="Ipb-Ne-DKp" kind="show" id="Ede-HH-gyT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Submit" destination="VLz-Br-y3v" id="AtZ-ad-Kl9"/>
                         <outlet property="age" destination="Vqy-1O-FCa" id="MKC-fk-k1D"/>
@@ -670,13 +663,13 @@
     <resources>
         <image name="Canada" width="96" height="101"/>
         <image name="Image" width="500" height="500"/>
-        <image name="clipboard" catalog="system" width="98" height="128"/>
+        <image name="clipboard" catalog="system" width="103" height="128"/>
         <image name="globe" catalog="system" width="128" height="123"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="profileImage" width="960" height="1280"/>
         <image name="the-quadratic-formula-and-the-values-of-discriminant-1024x655" width="1024" height="655"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
